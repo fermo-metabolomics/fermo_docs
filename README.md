@@ -1,5 +1,7 @@
 # fermo_docs
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15149102.svg)](https://doi.org/10.5281/zenodo.15149102)
+
 This repo contains documentation for the metabolomics dashboard tool *FERMO*.
 
 The documentation is deployed to GitHub Pages and available [here](https://fermo-metabolomics.github.io/fermo_docs/).
