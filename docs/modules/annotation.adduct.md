@@ -5,10 +5,6 @@ This module annotates the ion identity of co-occurring molecular features (featu
 - For each sample, overlapping features are determined by simplifying features to one-dimensional vectors, denoted with two points x1 (retention time of the start of the feature) and x2 (end of the feature). For two features A,B with A(x1,x2) and B(x1,x2), if any of (Ax2 < Bx1) or (Bx2 < Ax1) is true, features do not overlap.
 - For overlapping features, m/z values are compared. One of the two features is considered the [M+H]+ (positive mode) or the [M-H]- (negative mode) ‘base’ adduct, while the other peak is considered another adduct. If any of the registered mathematical operations (one for each different ion type) leads to a m/z match of the ‘base’ and the ‘adduct’ inside a user-specified mass deviation difference `mass_dev_ppm`, a match is registered.
 
-## Parameters
-
-- `mass_dev_ppm`: the maximum allowed mass deviation difference to constitute a match.
-
 ## Limitations
 
 - The algorithm currently does not triangulate the parent mass. Interpretation is the responsibility of the user.
@@ -42,3 +38,30 @@ Currently supported **negative** ion mode adducts are:
 - `bicarbonate_adduct [M+HCO2]-`
 - `tfa_adduct [M+TFA-H]- (trifluoroacetate)`
 - `acetate_adduct [M+HAc-H]-`
+
+## Parameters
+
+<table style="width: 100%;">
+ <tr>
+  <td style="width: 25%;"><b>Key</b></td>
+  <td style="width: 25%;"><b>Possible Values</b></td>
+  <td style="width: 25%;"><b>Required</b></td>
+  <td style="width: 25%;"><b>Default</b></td>
+ </tr>
+ <tr>
+  <td style="width: 25%;">activate_module</td>
+  <td style="width: 25%;">true, false</td>
+  <td style="width: 25%;">True</td>
+  <td style="width: 25%;">true</td>
+ </tr>
+ <tr>
+  <td style="width: 25%;">mass_dev_ppm</td>
+  <td style="width: 25%;">0-100.0</td>
+  <td style="width: 25%;">False</td>
+  <td style="width: 25%;">10.0</td>
+ </tr>
+</table>
+
+### Explanation
+
+- `mass_dev_ppm`: the maximum allowed mass deviation difference to constitute a match.

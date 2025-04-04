@@ -2,25 +2,24 @@
 
 ## FERMO Documentation
 
-*FERMO* is a dashboard application for metabolomics data analysis, with automated integration of genomics, phenotypical, and environmental (meta)data. 
+*FERMO* is a graphical dashboard application for metabolomics data analysis, with automated integration of phenotype data, group (meta)data, and genomic data. 
 
-- [*FERMO* GUI](home/gui.overview.md) describes the usage and functionality of the dashboard application.
-- [`fermo_core`](home/core.overview.md) describes the data processing and analysis functionality of *FERMO*
+- [*FERMO* GUI](home/gui.overview.md) describes the usage and functionality of the dashboard application frontend.
+- [`fermo_core`](home/core.overview.md) describes the backend data processing and analysis functionality of *FERMO*
 
-This documentation has been last updated for *FERMO* version **1.0.0**.
+This documentation has been last updated for *FERMO* **v1.1.0** and `fermo_core` **v0.5.0**
 
 ## How to use this documentation
 
-- **Home**: describes the usage and applicability of *FERMO*
+- **Home**: describes the general usage and applicability of *FERMO*
 - **Modules**: serves as reference to the individual modules integrated into *FERMO*
-- **For Developers**: materials for people interested in expanding the functionality of *FERMO*.
 
 ## About
 
 ### Websites
 - [*FERMO Online*](https://fermo.bioinformatics.nl/): the online version of *FERMO*.
-- [fermo_gui](https://github.com/fermo-met/fermo_gui): repository of the graphical user interface frontend
-- [fermo_core](https://github.com/mmzdouc/fermo_core): repository of the processing pipeline
+- [FERMO](https://github.com/fermo_metabolomics/fermo): repository of the graphical user interface frontend.
+- [fermo_core](https://github.com/fermo_metabolomics/fermo_core): repository of the processing pipeline
 
 ### License
 

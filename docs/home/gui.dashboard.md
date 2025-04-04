@@ -15,13 +15,14 @@ The **Main chromatogram** view is the core of the data visualization.
 It allows to access information on molecular features, their annotations, and relatedness.
 Clicking a peak triggers the sequence similarity visualization as chromatogram (showing releated features in the active sample) and as network (showing related features in the whole dataset.)
 
-*Nota bene: the peaks (extracted ion chromatograms) are actually pseudo-chromatograms, reconstructed from the peaktable data. They are only an abstraction of the original data and may not always represent the original peak shape appropriately.*
+*Nota bene: the peaks (extracted ion chromatograms) are actually pseudo-chromatograms, reconstructed from the peaktable data.* 
+*They are only an abstraction of the original data and may not always represent the original peak shape appropriately.*
 
 #### Example
 
 In the example, we inspect the molecular feature with the ID 15 by clicking it. 
 This feature has multiple related features present in the sample and in the dataset.
-When we inspect the *Molecular feature info" we see that it has been annotated as chymostatin-like molecule.
+When we inspect the *Molecular feature info* we see that it has been annotated as chymostatin-like molecule.
 
 ![full_run](../assets/images/screenshots/gui.dashboard.main_chrom.gif){ width="60%" }
 

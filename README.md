@@ -1,15 +1,19 @@
 # fermo_docs
 
-The documentation for the metabolomics dashboard tool *FERMO*
+This repo contains documentation for the metabolomics dashboard tool *FERMO*.
 
+The documentation is deployed to GitHub Pages and available [here](https://fermo-metabolomics.github.io/fermo_docs/).
 
-## Installation
+See also the [FERMO Metabolomics Organization](https://github.com/fermo-metabolomics) page.
 
-`hatch env create`
+## Concept
 
-## Run
+This repository uses GitHub Actions to automatically deploy changes to the code (=the documentation) to GitHub pages.
 
-`hatch run mkdocs serve`
+## Deploy locally
+
+- Install the package with `hatch env create`
+- Run the page locally using `hatch run mkdocs serve`
 
 ## About
 

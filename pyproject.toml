@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "fermo_docs"
 version = "1.0.0"
-description = 'Documentation for FERMO'
+description = 'Documentation for FERMO Metabolomics'
 readme = "README.md"
 requires-python = ">=3.11"
 license-files = { paths = ["LICENSE"] }

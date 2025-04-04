@@ -1,31 +1,43 @@
-*FERMO* functionality is separated in modules: each module has a certain functionality and takes certain parameters that modify its behavior. All modules are optional and can be switched on/off as desired.
+*FERMO* functionality is separated in modules: each module has a certain functionality and takes certain parameters that modify its behavior. 
+All modules are optional and can be switched on/off as desired.
 
-Modules can be separated into two types:
+In the *FERMO* GUI, these parameters can be set using the input forms. 
 
-- `core_modules`: run by default and must be turned off explicitly
-- `additional_modules`: are disabled by default (e.g. because they need specific input files) and must be turned on explicitly
+*FERMO* in command line mode (`fermo_core`) requires a specifically formatted `parameters` file in `JSON` format. 
+The parameters are described in the individual modules.
 
-In the *FERMO* GUI, these parameters can be set using the input forms. If you are running *FERMO* in command line mode, see the section [Parameters](../home/core.parameters.md) for information about setting up the parameter file.
+## Filtering
 
-### `core_modules`
+- [Feature Filtering](filter.feature.md)
+- [MS/MS Filtering](filter.msms.md)
+
+## Networking
+
+- [Spectral Similarity (Molecular) Networking](networking.md)
+
+## Annotation
 
 - [Adduct Annotation](annotation.adduct.md)
 - [Neutral Loss Annotation](annotation.loss.md)
 - [Fragment Annotation](annotation.fragment.md)
-- [Spectral Similarity (Molecular) Networking](networking.md)
-
-### `additional_modules`
-
-- [Feature Filtering](filter.feature.md)
-- [MS/MS Filtering](filter.msms.md)
-- [Blank Assignment](metadata.blank.md)
-- [Group Assignment](metadata.group_fold.md)
-- [Phenotype Qualitative](phenotype.qualitative.md)
-- [Phenotype Quantitative-Percentage](phenotype.quant-percent.md)
-- [Phenotype Quantitative-Concentration](phenotype.quant-concentr.md)
 - [Spectral Library Annotation](annotation.userlib.md)
 - [MS2Query Annotation](annotation.ms2query.md)
 - [antiSMASH KnownClusterBlast Annotation](annotation.as_kcb.md)
+
+## Group Metadata
+
+- [Blank Assignment](metadata.blank.md)
+- [Group Assignment](metadata.group_fold.md)
+
+## Phenotype Assignment
+
+- [Phenotype Qualitative](phenotype.qualitative.md)
+- [Phenotype Quantitative-Percentage](phenotype.quant-percent.md)
+- [Phenotype Quantitative-Concentration](phenotype.quant-concentr.md)
+
+## Scores
+
 - [Feature Scores Calculation](scores.features.md)
 - [Sample Scores Calculation](scores.samples.md)
+
 

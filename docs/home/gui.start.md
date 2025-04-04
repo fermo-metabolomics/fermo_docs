@@ -96,7 +96,6 @@ See [**here**](./input_output.md#spectral-library) for more information on the r
 *(optional)*
 
 *FERMO* accepts result files coming from the [MS2Query](https://github.com/iomega/ms2query) annotation program.
-While previous versions of *FERMO* employed an inbuilt version of MS2Query, this has been discontinued due to integration issues. Therefore, MS2Query needs to be run separately by the user. 
 
 See [**here**](./input_output.md#ms2query-results-file) for more information on the required MS2Query results file format.
 

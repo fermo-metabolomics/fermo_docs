@@ -1,7 +1,7 @@
 site_name: FERMO Documentation
 site_description: Documentation for FERMO metabolomics software
 site_author: Mitja M. Zdouc
-copyright: '&copy; 2022 to present <a href="https://github.com/mmzdouc" target="_blank" rel="noopener">Mitja M. Zdouc</a>'
+copyright: '&copy; 2022 to present <a href="https://github.com/mmzdouc" target="_blank" rel="noopener">Mitja M. Zdouc</a> and individual contributors'
 
 docs_dir: docs
 site_dir: site
@@ -49,7 +49,6 @@ nav:
       - fermo_core:
           - Overview: home/core.overview.md
           - Installation: home/core.installation.md
-          - Parameters: home/core.parameters.md
   - Modules:
       - Modules Overview: modules/overview.md
       - Filtering:
@@ -74,10 +73,6 @@ nav:
       - Scores:
           - Feature Scores: modules/scores.features.md
           - Sample Scores: modules/scores.samples.md
-  - For Developers:
-      - Overview: for_devs/overview.md
-      - Architecture: for_devs/architecture.md
-      - New features: for_devs/new_features.md
 
 extra_css:
   - stylesheets/extra.css
@@ -85,11 +80,7 @@ extra_css:
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/mmzdouc
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/MitjaMZ
-    - icon: fontawesome/brands/linkedin
-      link: https://nl.linkedin.com/in/mitja-zdouc-phd-05aa9116b
+      link: https://github.com/fermo-metabolomics/
 
 markdown_extensions:
   - pymdownx.highlight:

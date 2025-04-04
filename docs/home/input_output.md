@@ -13,13 +13,13 @@ This is a comprehensive list of input data formats currently accepted by *FERMO*
   </tr>
   <tr>
     <td style="width: 25%;">Molecular feature peaktable</td>
-    <td style="width: 25%;">mzmine3</td>
+    <td style="width: 25%;">mzmine3/mzmine4</td>
     <td style="width: 25%;">Mandatory</td>
     <td style="width: 25%;"><a href="https://github.com/mmzdouc/fermo_core/blob/main/tests/test_data/test.peak_table_quant_full.csv" target="_blank" rel="noopener noreferrer">mzmine3</a></td>
   </tr>
   <tr>
     <td style="width: 25%;">MS/MS spectrum information</td>
-    <td style="width: 25%;">mgf(mzmine3)</td>
+    <td style="width: 25%;">mgf(mzmine3/mzmine4)</td>
     <td style="width: 25%;">Optional</td>
     <td style="width: 25%;"><a href="https://github.com/mmzdouc/fermo_core/blob/main/tests/test_data/test.msms.mgf" target="_blank" rel="noopener noreferrer">mgf(mzmine3)</a></td>
   </tr>
@@ -37,15 +37,15 @@ This is a comprehensive list of input data formats currently accepted by *FERMO*
   </tr>
   <tr>
     <td style="width: 25%;">Spectral library</td>
-    <td style="width: 25%;">mgf(GNPS)</td>
+    <td style="width: 25%;">mgf</td>
     <td style="width: 25%;">Optional</td>
-    <td style="width: 25%;"><a href="https://github.com/mmzdouc/fermo_core/blob/main/tests/test_data/test.spectral_library.mgf" target="_blank" rel="noopener noreferrer">mgf(GNPS)</a></td>
+    <td style="width: 25%;"><a href="https://github.com/mmzdouc/fermo_core/blob/main/tests/test_data/test.spectral_library.mgf" target="_blank" rel="noopener noreferrer">mgf</a></td>
   </tr>
   <tr>
     <td style="width: 25%;">MS2Query results file</td>
-    <td style="width: 25%;">ms2query(fermo-modified)</td>
+    <td style="width: 25%;">ms2query</td>
     <td style="width: 25%;">Optional</td>
-    <td style="width: 25%;"><a href="https://github.com/mmzdouc/fermo_core/blob/main/tests/test_data/test.ms2query_results.csv" target="_blank" rel="noopener noreferrer">ms2query(fermo-modified)</a></td>
+    <td style="width: 25%;"><a href="https://github.com/mmzdouc/fermo_core/blob/main/tests/test_data/test.ms2query_results.csv" target="_blank" rel="noopener noreferrer">ms2query</a></td>
   </tr>
   <tr>
     <td style="width: 25%;">AntiSMASH results</td>
@@ -114,11 +114,15 @@ Peaktable produced by created by MZmine (version 3.x). To generate the peaktable
 
 For an example, see <a href="https://github.com/mmzdouc/fermo_core/blob/main/tests/test_data/test.peak_table_quant_full.csv" target="_blank" rel="noopener noreferrer">here</a>.
 
+#### mzmine4
+
+*FERMO* also accepts peaktables from MZmine4 (exported analogously as above)
+
 ### MSMS spectrum information
 
-#### mgf(mzmine3)
+#### mgf(mzmine3/mzmine4)
 
-The MS/MS (MS2) fragmentation data file is automatically generated during MZmine (version 3.x) peaktable export (see above).
+The MS/MS (MS2) fragmentation data file is automatically generated during MZmine (version >=3) peaktable export (see above).
 
 ```
 BEGIN IONS
@@ -181,7 +185,7 @@ sampleN.mzXML
 - A column labeled `sample_name` specifying the sample identifiers 
 - A column labeled `well` specifying the well number. Numbers in this column must be occurring only once. Note that the label `well` stands for any measurement reference (vial, rack position, etc.)
 - One to six columns labeled with `assay:...`, which indicate different assays (or one assay at different concentrations). The values indicate the percentage inhibition measured for this sample. Negative percentages are considered as 0 (zero).
-- Measurements for at least 10 samples
+- Measurements for at least 4 samples
 
 ```csv
 sample_name,well,assay:assay1_conc1,assay:assay1_conc2,assay2_conc1
@@ -200,7 +204,7 @@ sampleN.mzXML,M,X,Y,Z
 - A column labeled `sample_name` specifying the sample identifiers 
 - A column labeled `well` specifying the well number. Numbers in this column must be occurring only once. Note that the label `well` stands for any measurement reference (vial, rack position, etc.)
 - One to six columns labeled with `assay:...`, which indicate different assays. The values indicate the minimal inhibitory concentration and must be positive numbers. Samples with no measured activity are indicated with 0 (zero).
-- Measurements for at least 10 samples
+- Measurements for at least 4 samples
 
 ```csv
 sample_name,well,assay:bactericidal
@@ -220,7 +224,7 @@ sampleN.mzXML,M,X
 A `.mgf`-file (Mascot generic format) as produced by GNPS. Specifically, this file must:
 
 - Start with `BEGIN IONS`
-- Have a `PEPMASS` entry indicating the precursor ion m/z (must not be 0.0 or 1.0)
+- Have a `PEPMASS` entry indicating the precursor ion m/z
 - Have a number of fragment-intensity pairs
 - End with `END IONS`
 
@@ -248,9 +252,9 @@ END IONS
 
 #### ms2query(fermo-modified)
 
-A `.csv-file` (MSQuery version 1.4.0). Specifically, it must have:
+A MS2Query result `.csv-file`. Specifically, it must have:
 
-- A column labeled `id` with numbers matching molecular feature IDs (not found in standard MS2Query results files
+- A column labeled `id` or `feature_id` with numbers matching molecular feature IDs (default from MS2Query >= `v1.5.3`)
 - A column labeled `analog_compound_name`
 - A column labeled `ms2query_model_prediction`
 - A column labeled `precursor_mz_difference`
@@ -260,7 +264,7 @@ A `.csv-file` (MSQuery version 1.4.0). Specifically, it must have:
 - A column labeled `npc_class_results`
 
 ```csv
-ms2query_model_prediction,precursor_mz_difference,precursor_mz_query_spectrum,precursor_mz_analog,inchikey,analog_compound_name,smiles,id,npc_class_results
+ms2query_model_prediction,precursor_mz_difference,precursor_mz_query_spectrum,precursor_mz_analog,inchikey,analog_compound_name,smiles,feature_id,npc_class_results
 0.3459,47.0324,247.1276,294.1600,AAAAAAAAAA,”fakeomycin”,CCCCC,3,Carboline alkaloids
 ```
 
