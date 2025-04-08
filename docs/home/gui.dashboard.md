@@ -3,11 +3,39 @@
 The **Dashboard** is the main page of *FERMO GUI*. 
 It allows the perform data inspection and analysis and to download generated files for further use.
 
-*Nota bene: this documentation has been written using an example dataset, which can be accessed using the '**Example**' tab in *FERMO Online*. 
-The underlying data is a subset from [this study](https://doi.org/10.1021/acs.jnatprod.0c00807) and can be obtained from [Zenodo](https://doi.org/10.5281/zenodo.11961094).*
+## Examples
+
+Three examples are available that illustrate the prioritization capabilities of the FERMO dashboard.
+
+### *Euphorbia dendroides*
+
+This example re-analyzes the Euphorbia dendroides dataset previously featured in the [Bioactivity-Based Molecular Networking publication](https://doi.org/10.1021/acs.jnatprod.7b00737).
+This dataset integrates metabolomics data ([MSV000080502](https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=c32337af4d2148df8c91df74b85b84ff)) with quantitative phenotype measurements of antiviral activity against the chikungunya virus.
+
+This example demonstrates that FERMO’s phenotype prioritization approach yields results consistent with those reported in the original study.
+Applying the phenotype filter prioritizes the following molecular features: *m/z* 591.324 (RT 27.05 min), *m/z* 589.311 (RT 25.4 min), and *m/z* 563.296 (RT 21.6 min), highlighting FERMO’s ability to reproduce biologically relevant findings despite using a different prioritization algorithm.
+
+### *Streptomyces* sp. MBT27
+
+This example revisits a [study](https://doi.org/10.1038/s41598-022-06736-0), where cultivation on various carbon sources led to differential antibacterial activity against Staphylococcus aureus.
+The dataset integrates metabolomics data ([MSV000097564](https://doi.org/doi:10.25345/C5JS9HM3J)), quantitative bioactivity data, growth condition metadata, and genomic information (antiSMASH results).
+
+This example showcases FERMO’s strength in integrating diverse data types to identify bioactive compounds.
+In this case, FERMO correctly prioritizes actinomycin D as the active compound, further linking it to its likely biosynthetic gene cluster.
+
+### *Planomonospora*
+
+This example analyzes a subset of 10 Planomonospora strains, originally described in [this study](https://doi.org/10.1021/acs.jnatprod.0c00807). 
+This dataset combines metabolomics data ([Zenodo](https://doi.org/10.5281/zenodo.11961094)) with qualitative bioactivity data (growth inhibition against Staphylococcus aureus) and information about the phylogroup to which each strain belongs.
+
+This case demonstrates FERMO’s capability to integrate bioactivity and phylogenetic context.
+Applying the phenotype filter reveals that only strains from the “S” phylogroup exhibit antibacterial activity.
+Feature inspection suggests that the activity is likely due to siomycin A and its congeners, well-known antibacterial thiopeptides.
 
 
 ## Dashboard Elements
+
+*Nota bene: we will illustrate the dashboard functionality by drawing from the Planomonospora example dataset*
 
 ### Main chromatogram
 
