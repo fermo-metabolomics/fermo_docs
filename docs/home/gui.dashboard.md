@@ -52,7 +52,7 @@ In the example, we inspect the molecular feature with the ID 15 by clicking it.
 This feature has multiple related features present in the sample and in the dataset.
 When we inspect the *Molecular feature info* we see that it has been annotated as chymostatin-like molecule.
 
-![full_run](../assets/images/screenshots/gui.dashboard.main_chrom.gif){ width="60%" }
+![full_run](../assets/images/screenshots/gui.dashboard.main_chrom.gif){ width="75%" }
 
 ### General information
 
@@ -63,7 +63,7 @@ The **General information** displays a summary of the analysis run.
 In the example, we see that 143 molecular features from 11 samples were processed.
 74 features were removed due to the filter settings. We can also see the run date and the version of `fermo_core` that was used.
 
-![general info](../assets/images/screenshots/gui.dashboard.general_info.png){ width="60%" }
+![general info](../assets/images/screenshots/gui.dashboard.general_info.png){ width="75%" }
 
 
 ### Sample overview
@@ -79,7 +79,7 @@ In the example, we click through some of the samples.
 Since we have not set any filters, the numbers in **Total features** and **Retained Features** are identical.
 We then look for the sample with the highest diversity, specificity, and mean novelty score.
 
-![full_run](../assets/images/screenshots/gui.dashboard.sample_overview.gif){ width="60%" }
+![full_run](../assets/images/screenshots/gui.dashboard.sample_overview.gif){ width="75%" }
 
 ### Molecular feature info
 
@@ -93,7 +93,7 @@ We see that it has been annotated as a siomycin-like compound.
 It also has an annotation to be phenotype-associated.
 Further, it has been annotated by the Adduct, Fragment, and Neutral loss modules.
 
-![full_run](../assets/images/screenshots/gui.dashboard.feature_info.gif){ width="60%" }
+![full_run](../assets/images/screenshots/gui.dashboard.feature_info.gif){ width="75%" }
 
 
 ### Spectral similarity networking
@@ -106,7 +106,7 @@ The **Spectral similarity networking** displays the spectral similarity network 
 In the example, we inspect a network that shows very different topologies dependent on the algorithm used.
 We inspect the nodes and edges, and use the network view to quickly cycle through the features.
 
-![full_run](../assets/images/screenshots/gui.dashboard.network.gif){ width="60%" }
+![full_run](../assets/images/screenshots/gui.dashboard.network.gif){ width="75%" }
 
 ### Filters
 
@@ -167,7 +167,7 @@ This can be useful to subtract blank-associated features.
 
 In this example, we go through all the filters and observe how they impact the selection.
 
-![full_run](../assets/images/screenshots/gui.dashboard.filters.gif){ width="60%" }
+![full_run](../assets/images/screenshots/gui.dashboard.filters.gif){ width="75%" }
 
 ### Downloads and general settings
 
@@ -178,4 +178,4 @@ For more information about the output files, see [**here**](./input_output.md#ou
 
 In *FERMO* v.1.0.0, the dashboard has been completely reworked and now allows for dynamic construction of the user interface.
 
-![full_run](../assets/images/screenshots/gui.dashboard.drag.gif){ width="60%" }
+![full_run](../assets/images/screenshots/gui.dashboard.drag.gif){ width="75%" }
