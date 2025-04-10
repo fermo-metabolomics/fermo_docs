@@ -16,37 +16,31 @@ These filters can be combined with each other to yield certain slices of the ori
  <tr>
   <td style="width: 25%;"><b>Key</b></td>
   <td style="width: 25%;"><b>Possible Values</b></td>
-  <td style="width: 25%;"><b>Required</b></td>
   <td style="width: 25%;"><b>Default</b></td>
  </tr>
  <tr>
   <td style="width: 25%;">activate_module</td>
   <td style="width: 25%;">true, false</td>
-  <td style="width: 25%;">True</td>
   <td style="width: 25%;">false</td>
  </tr>
  <tr>
   <td style="width: 25%;">filter_rel_int_range_min</td>
   <td style="width: 25%;">0.0-1.0</td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">0.0</td>
  </tr>
  <tr>
   <td style="width: 25%;">filter_rel_int_range_max</td>
   <td style="width: 25%;">0.0-1.0</td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">1.0</td>
  </tr>
  <tr>
   <td style="width: 25%;">filter_rel_area_range_min</td>
   <td style="width: 25%;">0.0-1.0</td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">0.0</td>
  </tr>
  <tr>
   <td style="width: 25%;">filter_rel_area_range_max</td>
   <td style="width: 25%;">0.0-1.0</td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">1.0</td>
  </tr>
 </table>

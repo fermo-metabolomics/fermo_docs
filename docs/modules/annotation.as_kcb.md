@@ -21,19 +21,16 @@ Matches would likely be analogs (not exact matches), but could nevertheless help
  <tr>
   <td style="width: 25%;"><b>Key</b></td>
   <td style="width: 25%;"><b>Possible Values</b></td>
-  <td style="width: 25%;"><b>Required</b></td>
   <td style="width: 25%;"><b>Default</b></td>
  </tr>
  <tr>
   <td style="width: 25%;">filepath</td>
   <td style="width: 25%;"><i>(the filepath)</i></td>
-  <td style="width: 25%;">True</td>
   <td style="width: 25%;">N/A</td>
  </tr>
  <tr>
   <td style="width: 25%;">score_cutoff</td>
   <td style="width: 25%;">0.0-1.0</td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">0.7</td>
  </tr>
 </table>
@@ -48,13 +45,11 @@ Matches would likely be analogs (not exact matches), but could nevertheless help
  <tr>
   <td style="width: 25%;"><b>Key</b></td>
   <td style="width: 25%;"><b>Possible Values</b></td>
-  <td style="width: 25%;"><b>Required</b></td>
   <td style="width: 25%;"><b>Default</b></td>
  </tr>
  <tr>
   <td style="width: 25%;">activate_module</td>
   <td style="width: 25%;">true, false</td>
-  <td style="width: 25%;">True</td>
   <td style="width: 25%;">false</td>
  </tr>
  <tr>
@@ -66,26 +61,17 @@ Matches would likely be analogs (not exact matches), but could nevertheless help
  <tr>
   <td style="width: 25%;">fragment_tol</td>
   <td style="width: 25%;"> >0 </td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">0.1</td>
  </tr>
  <tr>
   <td style="width: 25%;">score_cutoff</td>
   <td style="width: 25%;">0.0-1.0</td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">0.5</td>
  </tr>
  <tr>
   <td style="width: 25%;">max_precursor_mass_diff</td>
   <td style="width: 25%;"> >=1 </td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">600</td>
- </tr>
- <tr>
-  <td style="width: 25%;">maximum_runtime</td>
-  <td style="width: 25%;"> >=0 </td>
-  <td style="width: 25%;">False</td>
-  <td style="width: 25%;">0 (unlimited)</td>
  </tr>
 </table>
 
@@ -103,32 +89,22 @@ Matches would likely be analogs (not exact matches), but could nevertheless help
  <tr>
   <td style="width: 25%;"><b>Key</b></td>
   <td style="width: 25%;"><b>Possible Values</b></td>
-  <td style="width: 25%;"><b>Required</b></td>
   <td style="width: 25%;"><b>Default</b></td>
  </tr>
  <tr>
   <td style="width: 25%;">activate_module</td>
   <td style="width: 25%;">true, false</td>
-  <td style="width: 25%;">True</td>
   <td style="width: 25%;">false</td>
  </tr>
  <tr>
   <td style="width: 25%;">score_cutoff</td>
   <td style="width: 25%;">0.0-1.0</td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">0.7</td>
  </tr>
  <tr>
   <td style="width: 25%;">max_precursor_mass_diff</td>
   <td style="width: 25%;"> >=1 </td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">600</td>
- </tr>
- <tr>
-  <td style="width: 25%;">maximum_runtime</td>
-  <td style="width: 25%;"> >=0 </td>
-  <td style="width: 25%;">False</td>
-  <td style="width: 25%;">0 (unlimited)</td>
  </tr>
 </table>
 

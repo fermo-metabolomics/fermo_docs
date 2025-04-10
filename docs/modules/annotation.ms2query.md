@@ -13,19 +13,16 @@ For more information on the algorithmm see the [MS2Query Documentation](https://
  <tr>
   <td style="width: 25%;"><b>Key</b></td>
   <td style="width: 25%;"><b>Possible Values</b></td>
-  <td style="width: 25%;"><b>Required</b></td>
   <td style="width: 25%;"><b>Default</b></td>
  </tr>
  <tr>
   <td style="width: 25%;">filepath</td>
   <td style="width: 25%;"><i>(the filepath)</i></td>
-  <td style="width: 25%;">True</td>
   <td style="width: 25%;">N/A</td>
  </tr>
  <tr>
   <td style="width: 25%;">score_cutoff</td>
   <td style="width: 25%;">0.0-1.0</td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">0.7</td>
  </tr>
 </table>

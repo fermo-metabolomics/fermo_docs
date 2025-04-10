@@ -23,49 +23,41 @@ Samples inactive at any concentration are specified with 0. Multiple measurement
  <tr>
   <td style="width: 25%;"><b>Key</b></td>
   <td style="width: 25%;"><b>Possible Values</b></td>
-  <td style="width: 25%;"><b>Required</b></td>
   <td style="width: 25%;"><b>Default</b></td>
  </tr>
  <tr>
   <td style="width: 25%;">activate_module</td>
   <td style="width: 25%;">true, false</td>
-  <td style="width: 25%;">True</td>
   <td style="width: 25%;">false</td>
  </tr>
  <tr>
   <td style="width: 25%;">sample_avg</td>
   <td style="width: 25%;">mean, median</td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">mean</td>
  </tr>
  <tr>
   <td style="width: 25%;">value</td>
   <td style="width: 25%;">area</td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">area</td>
  </tr>
  <tr>
   <td style="width: 25%;">algorithm</td>
   <td style="width: 25%;">pearson</td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">pearson</td>
  </tr>
  <tr>
   <td style="width: 25%;">fdr_corr</td>
   <td style="width: 25%;">bonferroni, sidak, holm-sidak, holm, simes-hochberg, hommel, fdr_bh, fdr_by, fdr_tsbh, fdr_tsbky</td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">bonferroni</td>
  </tr>
  <tr>
   <td style="width: 25%;">p_val_cutoff</td>
   <td style="width: 25%;">0.0-1.0</td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">0.05</td>
  </tr>
  <tr>
   <td style="width: 25%;">coeff_cutoff</td>
   <td style="width: 25%;">0.0-1.0</td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">0.7</td>
  </tr>
 </table>

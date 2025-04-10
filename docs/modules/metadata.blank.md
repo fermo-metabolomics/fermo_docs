@@ -13,31 +13,26 @@ Therefore, blank subtraction is an integral part of metabolomics data processing
  <tr>
   <td style="width: 25%;"><b>Key</b></td>
   <td style="width: 25%;"><b>Possible Values</b></td>
-  <td style="width: 25%;"><b>Required</b></td>
   <td style="width: 25%;"><b>Default</b></td>
  </tr>
  <tr>
   <td style="width: 25%;">activate_module</td>
   <td style="width: 25%;">true, false</td>
-  <td style="width: 25%;">True</td>
   <td style="width: 25%;">false</td>
  </tr>
  <tr>
   <td style="width: 25%;">factor</td>
   <td style="width: 25%;">>=1</td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">10</td>
  </tr>
  <tr>
   <td style="width: 25%;">algorithm</td>
   <td style="width: 25%;">mean, median, maximum</td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">mean</td>
  </tr>
  <tr>
   <td style="width: 25%;">value</td>
   <td style="width: 25%;">height, area</td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">area</td>
  </tr>
 </table>

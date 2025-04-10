@@ -16,32 +16,22 @@ Such neutral losses can indicate functional groups present in the molecule and h
  <tr>
   <td style="width: 25%;"><b>Key</b></td>
   <td style="width: 25%;"><b>Possible Values</b></td>
-  <td style="width: 25%;"><b>Required</b></td>
   <td style="width: 25%;"><b>Default</b></td>
  </tr>
  <tr>
   <td style="width: 25%;">activate_module</td>
   <td style="width: 25%;">true, false</td>
-  <td style="width: 25%;">True</td>
   <td style="width: 25%;">true</td>
  </tr>
  <tr>
   <td style="width: 25%;">mass_dev_ppm</td>
   <td style="width: 25%;">0-100.0</td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">10.0</td>
- </tr>
- <tr>
-  <td style="width: 25%;">nonbiological</td>
-  <td style="width: 25%;">true, false</td>
-  <td style="width: 25%;">False</td>
-  <td style="width: 25%;">false</td>
  </tr>
 </table>
 
 ### Explanation
 
 - `mass_dev_ppm`: the maximum allowed mass deviation difference to constitute a match
-- `nonbiological`: allows to specify if neutral losses characteristic to non-biological molecules (synthetic chemicals) should be included in the search. This may lead to spurious matches.
 
 

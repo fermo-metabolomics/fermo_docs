@@ -8,7 +8,7 @@ This module compares molecular features against a user-provided (targeted) spect
 
 ## Limitations
 
-- Spectral library matching is prohibitively slow with large spectral libraries (especially using the MS2DeepScore algorithm). Ideally, a targeted spectral library should be provided. For a more general library, see MS2Query annotation.
+- Spectral library matching is prohibitively slow with large spectral libraries (especially using the MS2DeepScore algorithm). Therefore, a targeted spectral library should be provided. For a more general library, see MS2Query annotation.
 
 ## Parameters `modified cosine`
 
@@ -16,44 +16,32 @@ This module compares molecular features against a user-provided (targeted) spect
  <tr>
   <td style="width: 25%;"><b>Key</b></td>
   <td style="width: 25%;"><b>Possible Values</b></td>
-  <td style="width: 25%;"><b>Required</b></td>
   <td style="width: 25%;"><b>Default</b></td>
  </tr>
  <tr>
   <td style="width: 25%;">activate_module</td>
   <td style="width: 25%;">true, false</td>
-  <td style="width: 25%;">True</td>
   <td style="width: 25%;">false</td>
  </tr>
  <tr>
   <td style="width: 25%;">min_nr_matched_peaks</td>
   <td style="width: 25%;"> >=1 </td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">5</td>
  </tr>
  <tr>
   <td style="width: 25%;">fragment_tol</td>
   <td style="width: 25%;"> >0 </td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">0.1</td>
  </tr>
  <tr>
   <td style="width: 25%;">score_cutoff</td>
   <td style="width: 25%;">0.0-1.0</td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">0.7</td>
  </tr>
  <tr>
   <td style="width: 25%;">max_precursor_mass_diff</td>
   <td style="width: 25%;"> >=1 </td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">600</td>
- </tr>
- <tr>
-  <td style="width: 25%;">maximum_runtime</td>
-  <td style="width: 25%;"> >=0 </td>
-  <td style="width: 25%;">False</td>
-  <td style="width: 25%;">0 (unlimited)</td>
  </tr>
 </table>
 
@@ -70,32 +58,22 @@ This module compares molecular features against a user-provided (targeted) spect
  <tr>
   <td style="width: 25%;"><b>Key</b></td>
   <td style="width: 25%;"><b>Possible Values</b></td>
-  <td style="width: 25%;"><b>Required</b></td>
   <td style="width: 25%;"><b>Default</b></td>
  </tr>
  <tr>
   <td style="width: 25%;">activate_module</td>
   <td style="width: 25%;">true, false</td>
-  <td style="width: 25%;">True</td>
   <td style="width: 25%;">false</td>
  </tr>
  <tr>
   <td style="width: 25%;">score_cutoff</td>
   <td style="width: 25%;">0.0-1.0</td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">0.8</td>
  </tr>
  <tr>
   <td style="width: 25%;">max_precursor_mass_diff</td>
   <td style="width: 25%;"> >=1 </td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">600</td>
- </tr>
- <tr>
-  <td style="width: 25%;">maximum_runtime</td>
-  <td style="width: 25%;"> >=0 </td>
-  <td style="width: 25%;">False</td>
-  <td style="width: 25%;">0 (unlimited)</td>
  </tr>
 </table>
 
