@@ -55,7 +55,6 @@ Matches would likely be analogs (not exact matches), but could nevertheless help
  <tr>
   <td style="width: 25%;">min_nr_matched_peaks</td>
   <td style="width: 25%;"> >=1 </td>
-  <td style="width: 25%;">False</td>
   <td style="width: 25%;">5</td>
  </tr>
  <tr>
