@@ -108,15 +108,22 @@ The peaktable must:
 
 #### mzmine3
 
-Peaktable produced by created by MZmine (version 3.x). To generate the peaktable in MZmine3, perform the usual pre-processing steps and export the table using `Feature list methods -> Export feature list -> Molecular networking files`. In the resulting window (see below), keep defaults except `Filter rows: ALL`, `Feature intensity: Height`, and `CSV export: COMPREHENSIVE`.
+Peaktable produced by created by mzmine3. 
+To generate the peaktable in MZmine3, perform the usual pre-processing steps and export the table using `Feature list methods -> Export feature list -> Molecular networking files`. In the resulting window (see below), keep defaults except `Filter rows: ALL`, `Feature intensity: Height`, and `CSV export: COMPREHENSIVE`.
 
 <img src="../../assets/images/screenshots/export.mzmine3.png" alt="MZmine3 peaktable export" style="width: 70%;">
 
-For an example, see <a href="https://github.com/mmzdouc/fermo_core/blob/main/tests/test_data/test.peak_table_quant_full.csv" target="_blank" rel="noopener noreferrer">here</a>.
+*FERMO* will automatically try to parse **ion identity information** and **library matching** annotation from the peaktable.
+
+For an example, see <a href="https://github.com/fermo-metabolomics/fermo_core/blob/main/tests/test_data/mzmine3/mzmine3.9.0.csv" target="_blank" rel="noopener noreferrer">here</a>.
 
 #### mzmine4
 
-*FERMO* also accepts peaktables from MZmine4 (exported analogously as above)
+*FERMO* also accepts peaktables from mzmine4 (exported analogously as above)
+
+*FERMO* will automatically try to parse **ion identity information** and **library matching** annotation from the peaktable.
+
+For an example, see <a href="https://github.com/fermo-metabolomics/fermo_core/blob/main/tests/test_data/mzmine4/mzmine4.5.37.csv" target="_blank" rel="noopener noreferrer">here</a>.
 
 ### MSMS spectrum information
 
