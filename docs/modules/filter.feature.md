@@ -5,7 +5,7 @@ This module filters molecular features that do not fit specified cutoff settings
 It has been observed that under certain circumstances, a large part of molecular features can be attributed to instrument noise [Samples 2023](https://doi.org/10.1021/acs.analchem.2c04632). 
 Therefore, *FERMO* allows to filter certain molecular features from the analysis:
 
-- For a given range of relative signal height/height (0-1.0, relative to the feature with the highest intensity), molecular features that are not inside this range **in at least one sample** are discarded
+- For a given range of relative signal height/intensity (0-1.0, relative to the feature with the highest hieght/intensity), molecular features that are not inside this range **in at least one sample** are discarded
 - For a given range of relative signal area (0-1.0, relative to the feature with the highest area), molecular features that are not inside this range **in at least one sample** are discarded
 
 These filters can be combined with each other to yield certain slices of the original data.
