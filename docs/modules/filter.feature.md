@@ -10,6 +10,8 @@ Therefore, *FERMO* allows to filter certain molecular features from the analysis
 
 These filters can be combined with each other to yield certain slices of the original data.
 
+*Nota bene: by default, features with a relative area of less than 0.01 are filtered from the analysis.*
+
 ## Parameters
 
 <table style="width: 100%;">
@@ -21,7 +23,7 @@ These filters can be combined with each other to yield certain slices of the ori
  <tr>
   <td style="width: 25%;">activate_module</td>
   <td style="width: 25%;">true, false</td>
-  <td style="width: 25%;">false</td>
+  <td style="width: 25%;">true</td>
  </tr>
  <tr>
   <td style="width: 25%;">filter_rel_int_range_min</td>
@@ -35,7 +37,7 @@ These filters can be combined with each other to yield certain slices of the ori
  </tr>
  <tr>
   <td style="width: 25%;">filter_rel_area_range_min</td>
-  <td style="width: 25%;">0.0-1.0</td>
+  <td style="width: 25%;">0.01-1.0</td>
   <td style="width: 25%;">0.0</td>
  </tr>
  <tr>
