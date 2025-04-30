@@ -286,3 +286,9 @@ The ID can be found in the antiSMASH notification email or in the URL when brows
 #### Offline CLI (`fermo_core`)
 
 The `fermo_core` CLI requires a single antiSMASH results directory (at the time of writing, version 7.1) containing a `knownclusterblast` results directory.
+
+### *FERMO* Session File
+
+All analysis results and used parameters are written into a FERMO Session file in JSON format. This file serves as long-term storage of analysis results. Session files can be also loaded into FERMO, and used to reproduce the parameter settings.
+
+*Nota bene: FERMO >=1.0. does not accept session files that were generated with previous versions of FERMO (<1.0)*
