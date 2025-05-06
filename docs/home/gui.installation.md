@@ -1,1 +1,1 @@
-Detailed information on how to install and run **FERMO GUI** offline can be found in the [**README**](https://github.com/mmzdouc/fermo).
+Detailed information on how to install and run **FERMO GUI** offline can be found in the [**README**](https://github.com/fermo-metabolomics/fermo).

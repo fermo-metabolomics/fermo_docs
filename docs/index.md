@@ -18,8 +18,8 @@ This documentation has been last updated for *FERMO* **v1.1.0** and `fermo_core`
 
 ### Websites
 - [*FERMO Online*](https://fermo.bioinformatics.nl/): the online version of *FERMO*.
-- [FERMO](https://github.com/fermo_metabolomics/fermo): repository of the graphical user interface frontend.
-- [fermo_core](https://github.com/fermo_metabolomics/fermo_core): repository of the processing pipeline
+- [FERMO](https://github.com/fermo-metabolomics/fermo): repository of the graphical user interface frontend.
+- [fermo_core](https://github.com/fermo-metabolomics/fermo_core): repository of the processing pipeline
 
 ### License
 

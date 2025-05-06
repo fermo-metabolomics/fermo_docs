@@ -15,43 +15,43 @@ This is a comprehensive list of input data formats currently accepted by *FERMO*
     <td style="width: 25%;">Molecular feature peaktable</td>
     <td style="width: 25%;">mzmine3/mzmine4</td>
     <td style="width: 25%;">Mandatory</td>
-    <td style="width: 25%;"><a href="https://github.com/mmzdouc/fermo_core/blob/main/tests/test_data/test.peak_table_quant_full.csv" target="_blank" rel="noopener noreferrer">mzmine3</a></td>
+    <td style="width: 25%;"><a href="https://github.com/fermo-metabolomics/fermo_core/blob/main/tests/test_data/test.peak_table_quant_full.csv" target="_blank" rel="noopener noreferrer">mzmine3</a></td>
   </tr>
   <tr>
     <td style="width: 25%;">MS/MS spectrum information</td>
     <td style="width: 25%;">mgf(mzmine3/mzmine4)</td>
     <td style="width: 25%;">Optional</td>
-    <td style="width: 25%;"><a href="https://github.com/mmzdouc/fermo_core/blob/main/tests/test_data/test.msms.mgf" target="_blank" rel="noopener noreferrer">mgf(mzmine3)</a></td>
+    <td style="width: 25%;"><a href="https://github.com/fermo-metabolomics/fermo_core/blob/main/tests/test_data/test.msms.mgf" target="_blank" rel="noopener noreferrer">mgf(mzmine3)</a></td>
   </tr>
   <tr>
     <td style="width: 25%;">Group metadata</td>
     <td style="width: 25%;">fermo</td>
     <td style="width: 25%;">Optional</td>
-    <td style="width: 25%;"><a href="https://github.com/mmzdouc/fermo_core/blob/main/tests/test_data/test.group_metadata.csv" target="_blank" rel="noopener noreferrer">fermo</a></td>
+    <td style="width: 25%;"><a href="https://github.com/fermo-metabolomics/fermo_core/blob/main/tests/test_data/test.group_metadata.csv" target="_blank" rel="noopener noreferrer">fermo</a></td>
   </tr>
   <tr>
     <td style="width: 25%;">Phenotype/bioactivity data</td>
     <td style="width: 25%;">qualitative,<br>quantitative-percentage,<br>quantitative-concentration</td>
     <td style="width: 25%;">Optional</td>
-    <td style="width: 25%;"><a href="https://github.com/mmzdouc/fermo_core/blob/main/tests/test_data/test.bioactivity.qualitative.csv" target="_blank" rel="noopener noreferrer">qualitative</a>,<br><a href="https://github.com/mmzdouc/fermo_core/blob/main/tests/test_data/test.bioactivity.quant-percentage.csv" target="_blank" rel="noopener noreferrer">quantitative-percentage</a>,<br><a href="https://github.com/mmzdouc/fermo_core/blob/main/tests/test_data/test.bioactivity.quant-concentration.csv" target="_blank" rel="noopener noreferrer">quantitative-concentration</a></td>
+    <td style="width: 25%;"><a href="https://github.com/fermo-metabolomics/fermo_core/blob/main/tests/test_data/test.bioactivity.qualitative.csv" target="_blank" rel="noopener noreferrer">qualitative</a>,<br><a href="https://github.com/mmzdouc/fermo_core/blob/main/tests/test_data/test.bioactivity.quant-percentage.csv" target="_blank" rel="noopener noreferrer">quantitative-percentage</a>,<br><a href="https://github.com/mmzdouc/fermo_core/blob/main/tests/test_data/test.bioactivity.quant-concentration.csv" target="_blank" rel="noopener noreferrer">quantitative-concentration</a></td>
   </tr>
   <tr>
     <td style="width: 25%;">Spectral library</td>
     <td style="width: 25%;">mgf</td>
     <td style="width: 25%;">Optional</td>
-    <td style="width: 25%;"><a href="https://github.com/mmzdouc/fermo_core/blob/main/tests/test_data/test.spectral_library.mgf" target="_blank" rel="noopener noreferrer">mgf</a></td>
+    <td style="width: 25%;"><a href="https://github.com/fermo-metabolomics/fermo_core/blob/main/tests/test_data/test.spectral_library.mgf" target="_blank" rel="noopener noreferrer">mgf</a></td>
   </tr>
   <tr>
     <td style="width: 25%;">MS2Query results file</td>
     <td style="width: 25%;">ms2query</td>
     <td style="width: 25%;">Optional</td>
-    <td style="width: 25%;"><a href="https://github.com/mmzdouc/fermo_core/blob/main/tests/test_data/test.ms2query_results.csv" target="_blank" rel="noopener noreferrer">ms2query</a></td>
+    <td style="width: 25%;"><a href="https://github.com/fermo-metabolomics/fermo_core/blob/main/tests/test_data/test.ms2query_results.csv" target="_blank" rel="noopener noreferrer">ms2query</a></td>
   </tr>
   <tr>
     <td style="width: 25%;">AntiSMASH results</td>
     <td style="width: 25%;">antiSMASH(KnownClusterBlast)</td>
     <td style="width: 25%;">Optional</td>
-    <td style="width: 25%;"><a href="https://github.com/mmzdouc/fermo_core/tree/main/tests/test_data/JABTEZ000000000.1/" target="_blank" rel="noopener noreferrer">antiSMASH(KnownClusterBlast)</a></td>
+    <td style="width: 25%;"><a href="https://github.com/fermo-metabolomics/fermo_core/tree/main/tests/test_data/JABTEZ000000000.1/" target="_blank" rel="noopener noreferrer">antiSMASH(KnownClusterBlast)</a></td>
   </tr>
 </table>
 

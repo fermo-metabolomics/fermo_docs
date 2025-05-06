@@ -9,7 +9,7 @@ This module performs feature annotation by matching single MS/MS fragments again
 
 - Fragment matches can often be spurious (a single fragment m/z can correspond to many different molecule substructures) or can result from random noise. Therefore, they must not be trusted blindly.
 - Currently, only positive ion mode fragments are supported.
-- Currently, only y2- and b2 fragments resulting from (proteinogenic) peptides are supported (all calculated as [M+H]+ adducts). More information can be found on [fermo_core_extras](https://github.com/mmzdouc/fermo_core_extras). 
+- Currently, only y2- and b2 fragments resulting from (proteinogenic) peptides are supported (all calculated as [M+H]+ adducts). More information can be found on [fermo_core_extras](https://github.com/fermo-metabolomics/fermo_core_extras). 
 
 ## Parameters
 
