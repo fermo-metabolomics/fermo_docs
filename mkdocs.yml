@@ -42,8 +42,7 @@ nav:
       - Input/Output: home/input_output.md
       - Fermo GUI:
           - Overview: home/gui.overview.md
-          - Start Analysis: home/gui.start.md
-          - Load Session: home/gui.load.md
+          - Start or Load Analysis: home/gui.start.md
           - Dashboard: home/gui.dashboard.md
           - Installation: home/gui.installation.md
       - fermo_core:
