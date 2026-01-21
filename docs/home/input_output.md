@@ -164,7 +164,7 @@ sample1.mzXML,group1,mediumA
 sample2.mzXML,group1,mediumB
 sample3.mzXML,group2,mediumA
 sample4.mzXML,group2,mediumB
-sample1.mzXML,BLANK,BLANK
+sample5.mzXML,BLANK,BLANK
 sampleN.mzXML,groupX,mediumY
 ```
 
@@ -189,15 +189,15 @@ sampleN.mzXML
 
 `.csv-file` (see example below). Specifically, the file must have:
 
-- A column labeled `sample_name` specifying the sample identifiers 
-- A column labeled `well` specifying the well number. Numbers in this column must be occurring only once. Note that the label `well` stands for any measurement reference (vial, rack position, etc.)
+- A column labeled `sample_name` specifying the sample identifiers. These identifiers do not have to be unique, e.g. a sample can be specified multiple times, e.g. for replicate measurement.
+- A column labeled `well` specifying the well number. Numbers in this column must be **unique**. Note that the label `well` stands for any measurement reference (vial, rack position, etc.)
 - One to six columns labeled with `assay:...`, which indicate different assays (or one assay at different concentrations). The values indicate the percentage inhibition measured for this sample. Negative percentages are considered as 0 (zero).
 - Measurements for at least 4 samples
 
 ```csv
 sample_name,well,assay:assay1_conc1,assay:assay1_conc2,assay2_conc1
 sample1.mzXML,1,6,30,98
-sample1.mzXML,2,-5,22,80
+sample2.mzXML,2,-5,22,80
 sample2.mzXML,3,3,15,-20
 sample2.mzXML,4,18,17,32
 sampleN.mzXML,M,X,Y,Z
@@ -208,19 +208,19 @@ sampleN.mzXML,M,X,Y,Z
 
 `.csv`-file (see example below). Specifically, the file must have:
 
-- A column labeled `sample_name` specifying the sample identifiers 
-- A column labeled `well` specifying the well number. Numbers in this column must be occurring only once. Note that the label `well` stands for any measurement reference (vial, rack position, etc.)
+- A column labeled `sample_name` specifying the sample identifiers. These identifiers do not have to be unique, e.g. a sample can be specified multiple times, e.g. for replicate measurement.
+- A column labeled `well` specifying the well number. Numbers in this column must be **unique**. Note that the label `well` stands for any measurement reference (vial, rack position, etc.)
 - One to six columns labeled with `assay:...`, which indicate different assays. The values indicate the minimal inhibitory concentration and must be positive numbers. Samples with no measured activity are indicated with 0 (zero).
 - Measurements for at least 4 samples
 
 ```csv
 sample_name,well,assay:bactericidal
 sample1.mzXML,1,256
-sample1.mzXML,2,256
-sample1.mzXML,3,64
-sample1.mzXML,4,32
-sample1.mzXML,5,0
-sample1.mzXML,6,0
+sample2.mzXML,2,256
+sample3.mzXML,3,64
+sample4.mzXML,4,32
+sample5.mzXML,5,0
+sample6.mzXML,6,0
 sampleN.mzXML,M,X
 ```
 
