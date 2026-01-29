@@ -195,11 +195,11 @@ sampleN.mzXML
 - Measurements for at least 4 samples
 
 ```csv
-sample_name,well,assay:assay1_conc1,assay:assay1_conc2,assay2_conc1
+sample_name,well,assay:assay1_conc1,assay:assay1_conc2
 sample1.mzXML,1,6,30,98
 sample2.mzXML,2,-5,22,80
-sample2.mzXML,3,3,15,-20
-sample2.mzXML,4,18,17,32
+sample3.mzXML,3,3,15,-20
+sample4.mzXML,4,18,17,32
 sampleN.mzXML,M,X,Y,Z
 ```
 
