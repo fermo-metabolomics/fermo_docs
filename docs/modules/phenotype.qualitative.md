@@ -1,16 +1,18 @@
 ## Description
 
-The “qualitative” module takes qualitative phenotype/bioactivity data. 
-Samples are either considered “positive” or “negative” (binary). 
+The “qualitative” module takes qualitative phenotype/bioactivity assay data. 
+Samples are classified in a binary fashion: "positive” (e.g. showing antibiotic activity) or “negative" (e.g. showing no antibiotic activity). 
 The algorithm works as follows:
 
 - Features exclusively detected in the “positive” samples are considered phenotype/bioactivity-associated. 
 - Features exclusively detected in the “negative” samples are considered NOT phenotype/bioactivity-associated. 
-- For features detected in both “positive” and “negative” samples, a user-specified feature value (height or area) across “positive” and “negative” samples is compared using a user-specified algorithm. If the resulting quotient is greater than a user-specified ratio (fold-change), the feature is considered phenotype/bioactivity-associated; else, it is not. This allows to retain features that may be bioactivity-associated but are present in sub-inhibitory concentrations in the “negative” samples (lack of phenotypic/bioactivity readout). The fold-change is then registered as the phenotype score.
+- Features detected both in "positive" and "negative" are considered phenotype/bioactivity-associated if the quotient (factor) of mean/median/minmax area/height between "positive" and "negative" samples is above a user-specified threshold. Optionally, this can be supplemented by a statistical test for features that are detected in at least four "positive" and four "negative" samples.
+
+This function allows to retain features that may be bioactivity-associated but are present in sub-inhibitory concentrations in the “negative” samples (lack of phenotypic/bioactivity readout). 
+
 
 ## Limitations
 
-- Contrary to [Quantitative-Percentage](../modules/phenotype.quant-percent.md) and [Quantitative-Concentration](../modules/phenotype.quant-concentr.md), this module does not perform predictions - it rather excludes features that are unlikely to be associated with the observed phenotype.
 - This method assumes that the prerequisites with regard to sample reproducibility are met (see [Input/Output](../home/input_output.md)).
 
 
@@ -42,6 +44,16 @@ The algorithm works as follows:
   <td style="width: 25%;">height, area</td>
   <td style="width: 25%;">area</td>
  </tr>
+ <tr>
+  <td style="width: 25%;">test</td>
+  <td style="width: 25%;">None, Welsh, Wilcoxon</td>
+  <td style="width: 25%;">None</td>
+ </tr>
+ <tr>
+  <td style="width: 25%;">p_val_cutoff</td>
+  <td style="width: 25%;">0-1</td>
+  <td style="width: 25%;">0</td>
+ </tr>
 </table>
 
 ### Explanation
@@ -49,3 +61,5 @@ The algorithm works as follows:
 - `factor`: the user-specified ratio (fold change) to differentiate features detected in both “positive” and “negative” samples.
 - `value`: the value used in the determination of the quotient.
 - `algorithm`: the algorithm to summarize values over “positive” and “negative” samples. Currently possible algorithms are “mean”, “median”, and “minmax”. The latter takes the **lowest** value across “positive” samples and the **highest** value across “negative” samples
+- `test`: the statistical test to employ (optional). For features that pass the fold change threshold and which are observed in at least four "positive" and "negative" samples, an additional statistical test can be specified. This allows to remove spurious matches when the fold-change is set to a low threshold.
+- `p_val_cutoff`: the significance cutoff of the employed statistical test (optional). Used to give additional discriminatory power when factor is low. Can be disabled by setting it to 0 (default).
