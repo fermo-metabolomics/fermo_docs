@@ -6,7 +6,7 @@ The algorithm works as follows:
 
 - Features exclusively detected in the “positive” samples are considered phenotype/bioactivity-associated. 
 - Features exclusively detected in the “negative” samples are considered NOT phenotype/bioactivity-associated. 
-- Features detected both in "positive" and "negative" are considered phenotype/bioactivity-associated if the quotient (factor) of mean/median/minmax area/height between "positive" and "negative" samples is above a user-specified threshold. Optionally, this can be supplemented by Walsh's t-test if the user sets a significance threshold (switched off by default).
+- Features detected both in "positive" and "negative" are considered phenotype/bioactivity-associated if the quotient (factor) of mean/median/minmax area/height between "positive" and "negative" samples is above a user-specified threshold. Optionally, this can be supplemented by a statistical test for features that are detected in at least four "positive" and four "negative" samples.
 
 This function allows to retain features that may be bioactivity-associated but are present in sub-inhibitory concentrations in the “negative” samples (lack of phenotypic/bioactivity readout). 
 
@@ -45,6 +45,11 @@ This function allows to retain features that may be bioactivity-associated but a
   <td style="width: 25%;">area</td>
  </tr>
  <tr>
+  <td style="width: 25%;">test</td>
+  <td style="width: 25%;">None, Welsh, Wilcoxon</td>
+  <td style="width: 25%;">None</td>
+ </tr>
+ <tr>
   <td style="width: 25%;">p_val_cutoff</td>
   <td style="width: 25%;">0-1</td>
   <td style="width: 25%;">0</td>
@@ -56,4 +61,5 @@ This function allows to retain features that may be bioactivity-associated but a
 - `factor`: the user-specified ratio (fold change) to differentiate features detected in both “positive” and “negative” samples.
 - `value`: the value used in the determination of the quotient.
 - `algorithm`: the algorithm to summarize values over “positive” and “negative” samples. Currently possible algorithms are “mean”, “median”, and “minmax”. The latter takes the **lowest** value across “positive” samples and the **highest** value across “negative” samples
-- `p_val_cutoff`: the significance cutoff of Welsh's t-test (optional). Used to give additional discriminatory power when factor is low. Can be disabled by setting it to 0 (default).
+- `test`: the statistical test to employ (optional). For features that pass the fold change threshold and which are observed in at least four "positive" and "negative" samples, an additional statistical test can be specified. This allows to remove spurious matches when the fold-change is set to a low threshold.
+- `p_val_cutoff`: the significance cutoff of the employed statistical test (optional). Used to give additional discriminatory power when factor is low. Can be disabled by setting it to 0 (default).
