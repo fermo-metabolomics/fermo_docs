@@ -170,6 +170,19 @@ sampleN.mzXML,groupX,mediumY
 
 ### Phenotype (bioactivity) data
 
+While FERMO accepts both crude and fractionated samples for the assignment of the phenotype score, 
+the sample type (crude vs. fractionated) introduces some considerations regarding the choice of assignment algorithm and the interpretations of results.
+
+In case of fractionated data, all three algorithms (qualitative, quantitative-percentage, and quantitative-concentration) are appropriate,
+provided that fractionation was sufficiently fine-grained
+This is because the quantitative algorithms only consider features appearing in at least four fractions for correlation calculation.
+In fractionations consisting of only few fractions, bioactivity-associated features may not meet this requirement and will be excluded. 
+
+For crude extracts, the qualitative algorithm is most applicable. 
+For the quantitative algorithms, the necessary “range of responses” may not be met if the samples are very different from each other. 
+Should the samples be chemically quite similar (e.g. all samples result from the same organism), the quantitative algorithms can be appropriate.
+
+
 #### qualitative
 
 `.csv`-file (see example below). Specifically, the file must have:
